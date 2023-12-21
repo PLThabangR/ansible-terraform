@@ -1,0 +1,588 @@
+    1  pwd
+    2  whoami
+    3  ps
+    4  su
+    5  whoami
+    6  pwd
+    7  cd Documents
+    8  ls
+    9  cd LearnLinux/
+   10   ls
+   11  ls -l
+   12  chmod g+w thabang
+   13  ls -l
+   14  chmod a+r thabang
+   15  ls -l
+   16  clear
+   17  ls -ltr
+   18  ls -lt
+   19  ls -l thabang
+   20  rm -r config
+   21  ls -l 
+   22  mkdir config
+   23  clear
+   24  pwd
+   25  touch file23
+   26  ls -l
+   27  ls -lt
+   28  ls -ltr
+   29  clear
+   30  chmod file23 g+r
+   31  ls -ltr
+   32  pwd
+   33  chmod g+r file23
+   34  ls -ltr
+   35  chmod g-r file23
+   36  ls -ltr
+   37  chmod g+r file23
+   38  ls -ltr
+   39  clear
+   40  chmod a+w file23
+   41  ls -ltr
+   42  chmod a+wr file23
+   43  ls -ltr
+   44  clear
+   45  ls -ltr
+   46  chmod a-x folder1
+   47  cd folder1
+   48  chmod a+x folder1
+   49  cd folder1
+   50  cd ..
+   51  ls -ltr
+   52  chmod 764 thabang
+   53  ls -ltr
+   54  chmod 6 thabang
+   55  ls -ltr
+   56  chmod 600 thabang
+   57  ls -ltr
+   58  chmod 764 thabang
+   59  ls -ltr
+   60  ls -l
+   61  clear
+   62  ls -ltr
+   63  su -
+   64  su 
+   65  whoami
+   66  pwd
+   67  rm -r folder1
+   68  clear
+   69  touch tx
+   70  ls -l tx
+   71  getfacl tx
+   72  setfacl -m u:thabngr:rw tx
+   73  setfacl -m u:thabangr:rw tx
+   74  ls -ltr
+   75  ls -ltr tx
+   76  getfacl tx
+   77  whatis setfacl 
+   78  man setfacl 
+   79  clear
+   80  whatis ls
+   81  whatis cd
+   82  whatis pwd
+   83  ls --help
+   84  clear
+   85  ls
+   86  echo "Thabang rakgorop is the best in Jesus name" > thabang
+   87  ls -l thabang
+   88  cat thabang
+   89  echo "This is what a man ought to becoming" > thabang
+   90  cat thabang
+   91  echo "This is what a man ought to becoming" >> thabang
+   92  echo "This is what a man ought to becoming" >>> thabang
+   93  echo "This is what a man ought to becoming" >> thabang
+   94  cat thabang
+   95  echo "Thabang rakgorop is the best in Jesus name" >> thabang
+   96  cat thabang
+   97  echo "This file is created in 2023" >> thabang
+   98  cat thabang
+   99  getfacl thabang
+  100  ls -ltr > john
+  101  ls -ltr john
+  102  cat john
+  103  clear
+  104  touch date
+  105  date
+  106  date > date
+  107  cat date
+  108  echo "this is a date folder" >> date
+  109  cat date
+  110  clear
+  111  ls -l > thabang
+  112  cat thabang
+  113  pwd > thabang
+  114  cat thabang
+  115  pwd newfile
+  116  cat newfile
+  117  clear
+  118  ls - la
+  119  ls -la
+  120  ls -la > thabang
+  121  cat thabang
+  122  clear
+  123  cat < thabang
+  124  ls -l /root
+  125  ls -l /root > thabang
+  126  ls -l /root 2> thabang
+  127  cat thabang
+  128  man tee
+  129  clear
+  130  hostname
+  131  echo "When  is the rain faling" 
+  132  echo "When  is the rain falling" > rain 
+  133  cat rain
+  134  clear
+  135  echo "When  is the rain falling" | tee rain 
+  136  cat rain
+  137  echo "When  is the rain falling this month" | tee rain 
+  138  cat rain
+  139  clear
+  140  echo "When  is the rain falling this month" | tee -a rain 
+  141  cat rain
+  142  wc -c rain
+  143   clear
+  144  ls -l | tee thabang
+  145  cat thabang
+  146  clear
+  147  rm rain
+  148  ls
+  149  rm lex
+  150  ls
+  151  cp tx folder1
+  152  cp tx folder3
+  153  ls -l
+  154  clear
+  155  ls
+  156  cp thabang folder2
+  157  ls
+  158  cp thabang david
+  159  ls
+  160  echo "David is just created" > david
+  161  cat david
+  162  ls -ltr
+  163  clear
+  164  pwd
+  165  rm david 
+  166  ls
+  167  mv thabang folder4
+  168  ls
+  169  cd folder4
+  170  ls
+  171  clear
+  172  head thabang
+  173  ls
+  174  clear
+  175  su 
+  176  ls ltr
+  177  ls -ltr
+  178  cat messages
+  179  su
+  180  pws
+  181  pwd
+  182  cd Documents
+  183  cd learnlinux
+  184  ls
+  185  cd LearnLinux/
+  186  cd folder4
+  187  ls
+  188  cut -c1 thabang
+  189  cut -c1-5 thabang
+  190  cut -c1-5,8,10 thabang
+  191  cut -c1,8,10 thabang
+  192  clear
+  193  cut -c1-3 ,6-9 thabang
+  194  cut -c1-3,6-9 thabang
+  195  cut -c1-3,15-20 thabang
+  196  clear
+  197  awk version
+  198  pwd
+  199  cd Documents
+  200  cd LearnLinux/
+  201  cd folder4
+  202  ls
+  203  clear
+  204  awk --version
+  205  clear
+  206  awk '{print $1}' thabang
+  207  awk '{print $2}' thabang
+  208  awk '{print $3}' thabang
+  209  clear
+  210  awk '{print $1,$4}' thabang
+  211  awk '{root}' thabang
+  212  echo "thabang Rakgoropo"> super-char
+  213  echo "John doe"> super-char
+  214  echo "John doe">> super-char
+  215  echo "John Tapia">> super-char
+  216  echo "Thabang Rakgoropo">> super-char
+  217  echo "Raymond Maila">> super-char
+  218  echo "Welcome Tanaka">> super-char
+  219  cat super-char
+  220  clear
+  221  echo "General Zodd">> super-char
+  222  echo "General Moska">> super-char
+  223  echo "General Peter">> super-char2
+  224  ls
+  225  diff super-char super-char2
+  226  comp super-char super-char2
+  227  cmp super-char super-char2
+  228  clear
+  229  cd 
+  230  pwd
+  231  tar cvf thabangr.taz .
+  232  clear
+  233  ls -tr
+  234  mkdir rline
+  235  mv thabangr.tar rline
+  236  ls
+  237  tar cvf thabangr.taz .
+  238  clear
+  239  ls
+  240  rm -r thabangr.taz
+  241  ls
+  242  tar cvf thabangr.tar .
+  243  clear
+  244  ls
+  245  mv thabangr.tar rline
+  246  cd rline
+  247  ls
+  248  pwd
+  249  clear
+  250  tar
+  251  man tar
+  252  tar xvf thabangr.tar
+  253  ls
+  254  clear
+  255  ls
+  256  gzip thabangr.tar
+  257  ls -ltr
+  258  cd
+  259  ls
+  260  rm -r rline
+  261  ls
+  262  cd Documents/
+  263  cd LearnLinux/
+  264  cd folder4
+  265  ls
+  266  split thabang
+  267  ls
+  268  cat xaa
+  269  clear
+  270  cat thabang
+  271  cat xaa
+  272  clear
+  273  vi file1
+  274  cat file1
+  275  vi file1
+  276  cat file1
+  277  clear
+  278  man sed
+  279  clear
+  280  cat thabang
+  281  ls
+  282  cat file1
+  283  clear
+  284  super-char
+  285  cat super-char
+  286  sed 's/John/Thabo/g'
+  287  sed 's/John/Thabo/g' file1
+  288  sed 's/John/Thabo/g' super-char
+  289  cat file1
+  290  clear
+  291  cat super-char
+  292  sed -i 's/John/Thabo/g' super-char
+  293  cat super-char
+  294  clear
+  295  vi file1
+  296  clear
+  297  su
+  298  pwd
+  299  ls
+  300  useradd spiderman 
+  301  su
+  302  pwd
+  303  cd home
+  304  ls
+  305  cd .
+  306  cd ..
+  307  pwd
+  308  ls
+  309  cd thabngr
+  310  cd thabangr
+  311  ls
+  312  cd Documents
+  313  ls
+  314  cd LearnLinux/
+  315  pwd
+  316  clear
+  317  ls -s
+  318  ls -t
+  319  ls -ltr
+  320  ls -l folder3/
+  321  ls -l folder3 > results
+  322  cat results
+  323  clear
+  324  ls -s
+  325  ls -ltr -s
+  326  ls -ltsa
+  327  clear
+  328  ls -lr
+  329  clear
+  330  ls -lx
+  331  ls -lX
+  332  ls -lt
+  333  clear
+  334  date 
+  335  date --version
+  336  clear
+  337  cal
+  338  cal > results
+  339  cat results
+  340  clear
+  341  uptime
+  342  uptime -p
+  343  clear
+  344  icpu
+  345  iscpu
+  346  lscpu
+  347  free
+  348  clear
+  349  df 
+  350  df -l
+  351  df -h
+  352  clear
+  353  df --print-type
+  354  clear
+  355  du
+  356  du -ls
+  357  history
+  358  clear
+  359  whatis ls
+  360  w
+  361  w -s
+  362  ls
+  363  tar -cvf f1.tar file23 
+  364  ls
+  365  cat f1
+  366  tar cvf compressed.tar file23 
+  367  tar cvf compressed.tar .
+  368  ls
+  369  ls -ltr
+  370  clear
+  371  mkdir opem
+  372  ls
+  373  mv compressed opem
+  374  mv compressed.tar opem
+  375  ls
+  376  cd opem
+  377  ls
+  378  tar xvf compressed.tar
+  379  ls -ltr
+  380  clear
+  381  ls -s
+  382  ls -ltr
+  383  ls
+  384  pwd
+  385  cd ..
+  386  rm -r opem
+  387  ls
+  388  cat results
+  389  head results
+  390  tail resultsa
+  391  tail results
+  392  clear
+  393  head -n 3 results
+  394  tail -n 2 results
+  395  clear
+  396  sort results
+  397  sort -n results
+  398  clear
+  399  cat results | sort
+  400  cat results | wc -l
+  401  cat results | wc -c
+  402  head -n 3 results | tail -n 1
+  403  head -n 3 results | tail -n 2
+  404  head -n 3 results 
+  405  clear
+  406  grep results
+  407  greap 2 results
+  408  grep 2 results
+  409  grep 2 results >> results
+  410  grep 2 results >> results2
+  411  diff results results2 
+  412  clear
+  413  sudo cat etc/shadow 
+  414  sudo cat /etc/shadow 
+  415  clear
+  416  sudo cat /etc/shadow 
+  417  clear
+  418  pws
+  419  pwd
+  420  find . thabang
+  421  find thabang
+  422  clear
+  423  locate thabang 
+  424  clear
+  425  ls -ltr
+  426  pwd
+  427  find . -name "folder1"
+  428  locate folder1
+  429  mlocate folder1
+  430  clear
+  431  khomotso
+  432  su khomotso
+  433  clear
+  434  who
+  435  last 
+  436  clear
+  437  users
+  438  wall
+  439  write
+  440  clear
+  441  wall 
+  442  clear
+  443  user
+  444  users
+  445  celar
+  446  clear
+  447  su -
+  448  who
+  449  last
+  450  who
+  451  su florence
+  452  pwde
+  453  pwd
+  454  ls
+  455  cd Documents/
+  456  cd LearnLinux/
+  457  ls
+  458  cd shells
+  459  vi ifthen
+  460  chmod a+x ifthen
+  461  ls -ltr
+  462  ./ifthen
+  463  vi ifthen
+  464  ./ifthen
+  465  vi ifthen
+  466  ./ifthen
+  467  vi ifthen
+  468  ./ifthen
+  469  cleart
+  470  clear
+  471  vi ifthen
+  472  ./ifthen
+  473  vi ifthen
+  474  ./ifthen
+  475  vi ifthen
+  476  ./ifthen
+  477  vi ifthen
+  478  ./ifthen
+  479  clear
+  480  vi ifthen
+  481  clear
+  482  ls
+  483  cd ..
+  484  users
+  485  cd ..
+  486  ls
+  487  cd
+  488  ls
+  489  ls -ltr/home
+  490  cd Documents
+  491  cd LearnLinux/
+  492  cd shells
+  493  touch learn.sh
+  494  vi learn
+  495  ./learn
+  496  chmod a+x learn
+  497  ./learn
+  498  vi learn
+  499  learn
+  500  ./learn
+  501  vi learn
+  502  ./learn
+  503  vi learn
+  504  clear
+  505  ./learn
+  506  clear
+  507  vi learn
+  508  ./learn
+  509  vi learn
+  510  ./learn
+  511  vi learn
+  512  ./learn
+  513  ./learnclear
+  514  clear
+  515  vi learn
+  516  ./learnclear
+  517  ./learn
+  518  podman
+  519  podman search fedora
+  520  clear
+  521  cat /etc/resolv.config
+  522  su
+  523  ping
+  524  ping -c 
+  525  clear
+  526  su -
+  527  groups
+  528  less /etc/groups
+  529  less /etc/group
+  530  id
+  531  id root
+  532  sudo groupadd engineering
+  533  tail -n /etc/group
+  534  tail -n 3 /etc/group
+  535  sudo useradd -G engineering develper1
+  536  sudo useradd -G engineering develper2
+  537  tail -n 3 /etc/group
+  538  clear
+  539  group
+  540  groups
+  541  id george
+  542  ls /home
+  543  userdel developer1
+  544  userdel develper1
+  545  su -
+  546  clear
+  547  su -
+  548  clear
+  549  su -
+  550  ssh-keygen -t ed25519 -C "Thabang default"
+  551  ls -a .ssh
+  552  cat .ssh/id_ed25519.pub
+  553  ssh-copy-id -i ~/ssh/id_ed25519.pub 192.168.0.121
+  554  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.0.121
+  555  sudo vi /etc/ssh/sshd_config
+  556  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.0.121
+  557  clear
+  558  sudo vi /etc/ssh/sshd_config
+  559  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.0.121
+  560  sudo vi /etc/ssh/sshd_config
+  561  sudo systemctl restart ssh
+  562  sudo systemctl restart sshd
+  563  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.0.121
+  564  sudo vi /etc/ssh/sshd_config
+  565  sudo systemtl restart sshd
+  566  sudo systemctl restart sshd
+  567  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.0.121
+  568  ssh 192.168.0.121
+  569  ls -l .ssh
+  570  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.33.10
+  571  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.138.30.10
+  572  clear
+  573  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.138.30.10
+  574  ssh 192.168.0.121
+  575  clear
+  576  ssh 192.138.30.10
+  577  clear
+  578  ssh 192.138.30.10
+  579  cd Documents/
+  580  ls
+  581  cd ansible/
+  582  ls
+  583  cd exercise1
+  584  ls
+  585  hisyory > history1
+  586  cat hisyory > history1
+  587  cat history > history1
+  588  history > history1

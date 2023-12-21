@@ -1,0 +1,29 @@
+---
+- name: Setup Webserver
+  hosts: webgroup
+  become: true
+  tasks:
+    - name: Install Apache2 package
+      apt: 
+        name: apache2
+        state: present
+    - name: Start and enable apache2
+      service:
+          name: apache2
+          state: started
+          enabled: yes
+
+- name: Setup dbserver
+  hosts: dbgroup
+  become: true
+  tasks:
+    - name: Install MySQL server
+      apt:
+        name: mariadb-server
+        state: present
+    - name: Start & enable mariadb service
+      service:
+        name: mariadb
+        state: started
+        enabled: yes 
+  

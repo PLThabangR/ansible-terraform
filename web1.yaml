@@ -1,0 +1,27 @@
+---
+- name: SetUp Websever
+  hosts: webserver
+  tasks:
+    - name: Install apche httpd
+      yum:
+        name: httpd
+        state: present
+    - name: Start & Enable Httpd
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+- name: Setup DBServer
+  hosts: dbserver
+  tasks:
+    - name: Install MySQL server
+      yum: 
+        name: maria-server
+        state: present
+    - name: Start and enabled mariaDB service
+      service: 
+        name: mariadb
+        state: started
+        enabled: yes
+
